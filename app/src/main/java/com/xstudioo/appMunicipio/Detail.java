@@ -1,4 +1,4 @@
-package com.xstudioo.noteme;
+package com.xstudioo.appMunicipio;
 
 import android.content.Intent;
 import android.os.Bundle;

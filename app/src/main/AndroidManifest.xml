@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.xstudioo.noteme">
+    package="com.xstudioo.appMunicipio">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -9,31 +10,74 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.xstudioo.noteme.Edit">
+        <activity android:name="com.xstudioo.appMunicipio.Edit">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.xstudioo.noteme.MainActivity" />
+                android:value="com.xstudioo.appMunicipio.MainActivity" />
         </activity>
         <activity
-            android:name="com.xstudioo.noteme.Detail"
+            android:name="com.xstudioo.appMunicipio.Detail"
             android:label="@string/title_activity_detail"
-            android:parentActivityName="com.xstudioo.noteme.MainActivity"
+            android:parentActivityName="com.xstudioo.appMunicipio.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.xstudioo.noteme.MainActivity" />
+                android:value="com.xstudioo.appMunicipio.MainActivity" />
         </activity>
-        <activity android:name="com.xstudioo.noteme.AddNote">
+        <activity android:name="com.xstudioo.appMunicipio.AddNote">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.xstudioo.noteme.MainActivity" />
+                android:value="com.xstudioo.appMunicipio.MainActivity" />
         </activity>
-        <activity android:name="com.xstudioo.noteme.MainActivity">
+        <activity android:name="com.xstudioo.appMunicipio.MainActivity">
+
+        </activity>
+        <activity android:name="com.xstudioo.appMunicipio.ecra_inicialActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="com.xstudioo.appMunicipio.EntrarActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.xstudioo.appMunicipio.MainActivity" />
+        </activity>
+
+        <activity android:name="com.xstudioo.appMunicipio.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.xstudioo.appMunicipio.MainActivity" />
+        </activity>
+
+        <activity android:name="com.xstudioo.appMunicipio.RegisterActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.xstudioo.appMunicipio.MainActivity" />
+        </activity>
+        <activity android:name="helper.SessionManager">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.xstudioo.appMunicipio.MainActivity" />
+        </activity>
+
+        <activity android:name="helper.SQLiteHandler">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.xstudioo.appMunicipio.MainActivity" />
+        </activity>
+
+        <activity android:name="com.xstudioo.appMunicipio.AppConfig">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.xstudioo.appMunicipio.MainActivity" />
+        </activity>
+
+        <activity android:name="com.xstudioo.appMunicipio.AppController">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.xstudioo.appMunicipio.MainActivity" />
         </activity>
 
         <meta-data

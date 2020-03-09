@@ -1,4 +1,4 @@
-package com.xstudioo.noteme;
+package com.xstudioo.appMunicipio;
 
 import org.junit.Test;
 

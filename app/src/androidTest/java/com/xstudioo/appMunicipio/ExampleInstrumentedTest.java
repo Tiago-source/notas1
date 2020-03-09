@@ -1,4 +1,4 @@
-package com.xstudioo.noteme;
+package com.xstudioo.appMunicipio;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
