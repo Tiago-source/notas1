@@ -12,6 +12,7 @@ public class AppController extends Application {
 
     private RequestQueue mRequestQueue;
 
+
     private static AppController mInstance;
 
     @Override
