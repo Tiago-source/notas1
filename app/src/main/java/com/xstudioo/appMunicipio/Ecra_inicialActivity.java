@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-public class ecra_inicialActivity extends AppCompatActivity {
+public class Ecra_inicialActivity extends AppCompatActivity {
 
     private Button btnAnonimo, btnEntrar;
 
@@ -17,19 +17,19 @@ public class ecra_inicialActivity extends AppCompatActivity {
         setContentView(R.layout.activity_ecra_inicial);
 
         btnAnonimo = (Button) findViewById(R.id.anonimo);
-        btnEntrar = (Button) findViewById(R.id.login);
 
         btnAnonimo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ecra_inicialActivity.this, MainActivity.class));
+                startActivity(new Intent(Ecra_inicialActivity.this, MainActivity.class));
             }
         });
 
+        btnEntrar = (Button) findViewById(R.id.entrar);
         btnEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ecra_inicialActivity.this, LoginActivity.class));
+                startActivity(new Intent(Ecra_inicialActivity.this, LoginActivity.class));
             }
         });
     }

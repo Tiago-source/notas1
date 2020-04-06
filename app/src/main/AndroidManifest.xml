@@ -2,15 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.xstudioo.appMunicipio">
 
-    <application
-        android:name=".AppController"
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name="com.xstudioo.appMunicipio.Edit">
+    <application>
+        <activity android:name="com.xstudioo.appMunicipio.Edit"
+                  android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.xstudioo.appMunicipio.MainActivity" />
@@ -19,65 +13,53 @@
             android:name="com.xstudioo.appMunicipio.Detail"
             android:label="@string/title_activity_detail"
             android:parentActivityName="com.xstudioo.appMunicipio.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.xstudioo.appMunicipio.MainActivity" />
         </activity>
-        <activity android:name="com.xstudioo.appMunicipio.AddNote">
+        <activity android:name="com.xstudioo.appMunicipio.AddNote"
+                  android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.xstudioo.appMunicipio.MainActivity" />
         </activity>
-        <activity android:name="com.xstudioo.appMunicipio.MainActivity">
+        <activity android:name="com.xstudioo.appMunicipio.MainActivity"
+                  android:theme="@style/AppTheme">
 
         </activity>
-        <activity android:name="com.xstudioo.appMunicipio.ecra_inicialActivity">
+        <activity android:name="com.xstudioo.appMunicipio.Ecra_inicialActivity"
+                  android:theme="@style/AppTheme"
+                  >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.xstudioo.appMunicipio.EntrarActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.xstudioo.appMunicipio.MainActivity" />
+
+        <activity android:name="com.xstudioo.appMunicipio.LoginActivity"
+            android:theme="@style/AppTheme">
+
         </activity>
 
-        <activity android:name="com.xstudioo.appMunicipio.LoginActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.xstudioo.appMunicipio.MainActivity" />
+        <activity android:name="com.xstudioo.appMunicipio.RegisterActivity"
+            android:theme="@style/AppTheme">
+
         </activity>
 
-        <activity android:name="com.xstudioo.appMunicipio.RegisterActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.xstudioo.appMunicipio.MainActivity" />
-        </activity>
-        <activity android:name="helper.SessionManager">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.xstudioo.appMunicipio.MainActivity" />
-        </activity>
+        <activity android:name="com.xstudioo.appMunicipio.Mapa_activity"
+            android:theme="@style/AppTheme">
 
-        <activity android:name="helper.SQLiteHandler">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.xstudioo.appMunicipio.MainActivity" />
-        </activity>
-
-        <activity android:name="com.xstudioo.appMunicipio.AppConfig">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.xstudioo.appMunicipio.MainActivity" />
         </activity>
 
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <uses-library android:name="org.apache.http.legacy"
+            android:required="false"/>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
