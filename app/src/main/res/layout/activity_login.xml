@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context="com.xstudioo.appMunicipio.LoginActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Volley User Login System"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Email"
+        android:gravity="center"
+        android:id="@+id/editText_Email"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Password"
+        android:gravity="center"
+        android:id="@+id/editText_Password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/editText_Email"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="CLICK HERE TO LOGIN"
+        android:id="@+id/button_login"
+        android:layout_below="@id/editText_Password"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="CLICK HERE TO Register"
+        android:id="@+id/button_register"
+        android:layout_below="@id/button_login"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
